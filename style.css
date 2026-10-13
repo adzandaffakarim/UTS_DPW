@@ -44,7 +44,7 @@ header {
 }
 nav {
   display: flex;
-  justify-content: space-between; /* logo kiri, menu kanan */
+  justify-content: space-between; 
   align-items: center;
   padding: 14px 8%;
 }
@@ -62,12 +62,13 @@ nav {
   gap: 14px;
   min-height: 70vh;
 }
-.foto-bulat {
+.foto-profil {
   width: px; height: px;
   border-radius: 50%;
   background: var(--placeholder);
   display: grid; place-items: center;
   font-weight: 600; color: var(--teks-redup);
+  
 }
 
 
