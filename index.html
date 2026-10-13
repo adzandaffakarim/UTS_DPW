@@ -1,22 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio | Adzan Daffa Karim</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio | Adzan Daffa Karim</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
 
-    </header>
+  <header>
+    <nav>
+      <a href="#hero" class="logo">Adzan Daffa Karim</a>
+      <ul class="menu">
+        <li><a href="#hero">Beranda</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#keahlian">Keahlian</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+        <li><button id="btn-tema" type="button">Tema</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+   
+    <section id="hero">
+      <div class="foto-bulat"><img src="assets/fotoProfil.jpeg" alt="foto saya"></div>
+      <h1>Halo, Adzan Daffa Karim</h1>
+      <p>Mahasiswa &amp; Web Developer Pemula</p>
+      <a href="#keahlian" class="btn">Lihat Keahlian</a>
+    </section>
+
     
-    <main>
+    <section id="tentang">
+      <h2>Tentang Saya</h2>
+      <div class="tentang-isi">
+        <div class="foto-kotak">FOTO</div>
+        <div class="tentang-teks">
+          <p>Saya mahasiswa yang tertarik pada pengembangan web dan pemrograman. Saya suka membuat tampilan yang rapi dan mudah dipakai.</p>
+          <p id="teks-lanjut" class="hidden">Saat ini saya belajar HTML, CSS, JavaScript, dan Java. Saya juga aktif mengerjakan tugas kelompok dan keahlian pribadi.</p>
+          <button id="btn-lanjut" class="btn" type="button">Selengkapnya</button>
+        </div>
+      </div>
+    </section>
 
-    </main>
+   
+    <section id="keahlian">
+      <h2> Keahlian</h2>
+      <div class="grid-keahlian">
+        <article class="kartu">
+          <div class="gambar"><img src="assets/html.png" alt=""></div>
+          <h3>HTML</h3>
+        </article>
+        <article class="kartu">
+          <div class="gambar"><img src="assets/css.png" alt="css"></div>
+          <h3>CSS</h3>
+        </article>
+        <article class="kartu">
+          <div class="gambar"><img src="assets/python.png" alt="python"></div>
+          <h3>Python</h3>
+          <p>Deskripsi singkat keahlian ketiga.</p>
+        </article>
+      </div>
+    </section>
 
-    <footer>
+    <!-- KONTAK (form) -->
+    <section id="kontak">
+      <h2>Kontak</h2>
+      <div class="kontak-isi">
+        <form id="form-kontak" novalidate>
+          <input type="text" id="nama" placeholder="Nama">
+          <input type="email" id="email" placeholder="Email">
+          <textarea id="pesan" rows="5" placeholder="Pesan"></textarea>
+          <div class="baris-kirim">
+            <button type="submit" class="btn">Kirim</button>
+            <span id="status" role="status"></span>
+          </div>
+        </form>
+        <div class="kontak-info">
+          <p>Punya pertanyaan atau ingin berkolaborasi? Kirim pesan lewat formulir ini.</p>
+          <p>Email: nama@email.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    </footer>
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Nama Praktikan | <a href="#">GitHub</a> | <a href="#">LinkedIn</a></p>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
